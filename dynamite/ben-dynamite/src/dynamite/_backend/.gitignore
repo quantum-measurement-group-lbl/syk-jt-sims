@@ -1,0 +1,7 @@
+*.o
+config.pxi
+dnm_types.h
+bpetsc.c
+bsubspace.cpp
+bbuild.c
+*.so

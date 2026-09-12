@@ -1,0 +1,35 @@
+[project]
+name = "dynamite"
+description = "Fast numerics for large quantum spin chains."
+authors = [
+    {name = "Greg Kahanamoku-Meyer"},
+    {email = "gkm@berkeley.edu"}
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["quantum", "krylov"]
+classifiers = [
+    "Development Status :: 4 - Beta"
+]
+dynamic = ["version"]
+
+dependencies = [
+    "numpy ~= 1.26",
+    "scipy",
+    "threadpoolctl",
+    "petsc4py == 3.20.5",
+    "slepc4py == 3.20.2",
+]
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "cython",
+    "numpy ~= 1.26"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {file = ["VERSION"]}

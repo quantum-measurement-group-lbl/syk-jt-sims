@@ -1,0 +1,13 @@
+# unneeded files
+docker/
+docs/
+.gitignore
+
+# other files that might be generated
+build/
+**/dynamite.egg-info/
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/*.so
+**/*.o
+**/.dynamite
